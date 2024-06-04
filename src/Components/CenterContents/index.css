@@ -1,0 +1,241 @@
+@import url(../../App.css);
+
+
+.postPage::-webkit-scrollbar {
+    width: 6px;
+}
+
+.postPage::-webkit-scrollbar-track {
+    background-color: var(--border);
+}
+
+.postPage::-webkit-scrollbar-thumb {
+    background-color: #10101016;
+    border-radius: 10px;
+    width: 6px;
+}
+
+.postPage {
+    width: 50%;
+    height: 83vh;
+    padding-right: 10px;
+    overflow: hidden;
+    overflow-y: scroll;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    user-select: none;
+}
+
+.post-card {
+    background-color: var(--light);
+    padding: 30px;
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    padding-bottom: 0;
+}
+
+.postcard-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.post-card .postcard-head .left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.post-card .postcard-head .right {
+    position: relative;
+}
+
+.list-items {
+    position: absolute;
+    right: 0;
+    width: 155px;
+    background-color: #fff;
+    border-radius: 4px;
+    border: 1px solid #aaa;
+}
+
+.list-items li {
+    list-style-type: none;
+    padding: 5px 10px;
+    border-bottom: 1px solid #aaa;
+    font-size: 14px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+}
+
+.list-items li:hover {
+    background-color: dodgerblue;
+    cursor: pointer;
+    color: var(--light);
+}
+
+.list-items li:last-child {
+    border-bottom: 1px solid transparent;
+}
+
+.post-card .postcard-head .left img {
+    width: 50px;
+    height: 50px;
+}
+
+.post-card .postcard-head .left .handles {
+    margin-left: 15px;
+}
+
+.post-card .postcard-head .left .handles h4 {
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    color: var(--primary);
+}
+
+.post-card .postcard-head .left .handles h6 {
+    font-size: 12px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    color: var(--gray);
+}
+
+.post-card .card-img {
+    position: relative;
+}
+
+.post-card .card-img::before {
+    position: absolute;
+    content: '';
+    top: 40px;
+    right: 25px;
+    width: 25px;
+    height: 20px;
+    background-image: url("../../../public/Assets/heart-1.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+
+.post-card .bg-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-top: 20px;
+}
+
+.postcard-body .para {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--primary);
+    font-family: "Poppins", sans-serif;
+}
+
+.read-more {
+    color: var(--danger);
+    font-size: 14px;
+    font-family: "Poppins", sans-serif;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+.postcard-foot {
+    display: flex;
+    align-items: center;
+    padding: 30px 0;
+    margin-top: 30px;
+    border-top: 2px solid var(--border);
+}
+
+.postcard-foot .social-icons {
+    display: flex;
+    align-items: center;
+    margin-right: 18px;
+    user-select: none;
+}
+
+.postcard-foot .social-icons h5 {
+    font-size: 18px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    margin-left: 10px;
+}
+
+.vertList::-webkit-scrollbar {
+    height: 6px;
+}
+
+.vertList::-webkit-scrollbar-track {
+    background-color: var(--border);
+}
+
+.vertList::-webkit-scrollbar-thumb {
+    background-color: #10101016;
+    border-radius: 10px;
+    width: 6px;
+}
+
+.vertList {
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    height: 300px;
+    border-radius: 0;
+}
+
+.vertList .side-card {
+    width: 100%;
+    height: 200px;
+    margin: 0 20px;
+    cursor: grab;
+}
+
+.vertList .side-card:first-child,
+.vertList .side-card:last-child {
+    margin: 0;
+}
+
+.vertList .side-card .mainImg {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+
+.vert-card-body .para {
+    font-size: 14px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.vert-card-body .price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.vert-card-body h4 {
+    font-family: "Poppins", sans-serif;
+    font-size: 24px;
+}
+
+.starIcon {
+    width: 15px;
+    height: 15px;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
